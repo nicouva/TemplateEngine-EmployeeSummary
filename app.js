@@ -109,7 +109,7 @@ const next = () => {
           addNewEmployee()
           break
         case 'Finish':
-          fs.writeFile(path.join(__dirname, 'output', 'main.html'),
+          fs.writeFile(path.join(__dirname, 'output', 'team.html'),
             render(employee), err => {
               if (err) { console.log(err) }
             })
